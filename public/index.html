@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Foto (JS Version)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📸 Upload Foto</h1>
+            <p>Unggah foto Anda dengan mudah dan aman</p>
+        </div>
+        
+        <div class="content">
+            <div id="messageContainer"></div>
+            
+            <form class="upload-form" id="uploadForm">
+                <div class="upload-icon">📁</div>
+                <div class="upload-text">Pilih foto untuk diupload</div>
+                
+                <div class="file-input-wrapper">
+                    <input type="file" name="photo" id="photoInput" class="file-input" accept=".jpg,.jpeg,.png,.gif" required>
+                    <label for="photoInput" class="file-input-button">
+                        Pilih File
+                    </label>
+                </div>
+                
+                <div id="filePreview" class="file-preview" style="display: none;"></div>
+                
+                <div class="file-requirements">
+                    Format yang diizinkan: JPG, JPEG, PNG, GIF<br>
+                    Ukuran maksimal: 5MB
+                </div>
+                
+                <br>
+                <button type="submit" class="upload-btn" id="uploadBtn" disabled>Upload Foto</button>
+            </form>
+            
+            <div class="photo-gallery">
+                <h3>Foto yang Sudah Diupload (<span id="photoCount">0</span>)</h3>
+                <div class="gallery-grid" id="galleryGrid">
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
