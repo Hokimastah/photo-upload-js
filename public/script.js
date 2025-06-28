@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const galleryGrid = document.getElementById('galleryGrid');
     const photoCount = document.getElementById('photoCount');
     
- const API_URL = 'https://photo-upload-4lgtu1t8j-satrios-projects-a6b62f38.vercel.app';
+ const API_URL = 'https://photo-upload-js.vercel.app';
 
     // Fungsi untuk menampilkan pesan
     const showMessage = (message, type = 'error') => {
